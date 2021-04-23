@@ -1,0 +1,26 @@
+
+1.- user
+DML
+	INSERT INTO `user`(`userName`, `name`, `email`, `phoneNumber`, `password`, `registrationDate`, `type`) VALUES ('admin','admin','admin', null,'$2y$10$gGlKi7okGqHC2zdyZn9cjeyQktNKxFMnMP8w8QYg/2/Quy/A9cXE.',now(), 0)
+
+	SELECT 
+	idUser, 
+    userName, 
+    name, 
+    email, 
+    phoneNumber, 
+    password, 
+    registrationDate, 
+    type 
+	FROM 
+		user
+	WHERE 
+		userName = 'fide_22@gmail.com'
+	OR
+		email = 'fide_22@gmail.com';
+
+
+
+
+NOTAS
+- Revisar contenido DRM

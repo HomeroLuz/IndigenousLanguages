@@ -27,17 +27,19 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a href="login.php" class="navbar-brand">Ingresar</a>
-        <a href="userRegister.php" class="navbar-brand">Registrarse</a>
+        <a href="../index.php" class="navbar-brand">Inicio</a>
+        <a href="abbreviations.php" class="navbar-brand">Abreviaturas</a>
     </div>
 
     <div class="collapse navbar-collapse navbar-ex1-collapse">
-        <ul class="nav navbar-nav">
+        <!-- <ul class="nav navbar-nav">
             <li><a href="../index.php">Inicio</a></li>
             <li><a href="abbreviations.php">Abreviaturas</a></li>
-        </ul>
+        </ul> -->
 
         <ul class="nav navbar-nav navbar-right">
+            <li><a href="login.php">Ingresar</a></li>
+            <li><a href="userRegister.php">Registrarse</a></li>
             <li><a href="#">Acerca de</a></li>
         </ul>
     </div>

@@ -36,8 +36,9 @@
             <ul class="nav navbar-nav">
                 <li><a href="../index.php">Inicio</a></li>
                 <li><a href="register.php">Nuevo usuario</a></li>
-                <li><a href="abbreviations.php">Abreviaturas</a></li>
+                <li><a href="languageRegister.php">Registro de lenguaje</a></li>
                 <li><a href="wordInformationRegister.php">Registrar nueva palabra</a></li>
+                <li><a href="abbreviations.php">Abreviaturas</a></li>
             </ul>
 
             <ul class="nav navbar-nav navbar-right">

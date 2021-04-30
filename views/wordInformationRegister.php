@@ -3,6 +3,10 @@
 -->
 <?php
     include ('../controller/userSession.php');
+    include('../config/config.php');
+
+    $languageList = "SELECT `idLanguage`, `idCreator`, `registrationDate`, `name`, `decription`, `isInternational` FROM `language`";
+    $result = $conexion->query($languageList);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -20,7 +24,27 @@
 		<label><h1>&ensp;AGREGAR NUEVA PALABRA</h1></label><br/>
 		<hr/>
 		<div class="form-group">
-			<label for="vocabularyWord">&emsp;Náhuatl</label>
+            <label for="languageSelect">&emsp;Lenguaje:</label>
+            <select class="form-control" id="languageSelect" name="languageSelect">
+                <option selected value="0">Seleccione una opción</option>
+                <?php    
+                while ( $row = $result->fetch_array() )    
+                {
+                    ?>
+                    <option value=" <?php echo $row['idLanguage'] ?> " >
+                        <?php echo $row['name']; ?>
+                    </option>
+                    <?php
+                }
+
+				$result->free();
+				$conexion->close();
+                ?>     
+            </select>
+        </div>
+
+		<div class="form-group">
+			<label for="vocabularyWord">&emsp;Palabra</label>
 			<input type="text" class="form-control" id="vocabularyWord" name="vocabularyWord" placeholder="i.e. achi" required="true">
 		</div>
 

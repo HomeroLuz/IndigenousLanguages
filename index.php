@@ -56,8 +56,10 @@
                     ?>
                         <ul class="nav navbar-nav">
                             <li><a href="index.php">Inicio</a></li>
-                            <li><a href="views/abbreviations.php">Abreviaturas</a></li>
+                            <li><a href="views/register.php">Nuevo usuario</a></li>
+                            <li><a href="views/languageRegister.php">Registro de lenguaje</a></li>
                             <li><a href="views/wordInformationRegister.php">Registrar nueva palabra</a></li>
+                            <li><a href="views/abbreviations.php">Abreviaturas</a></li>
                         </ul>
 
                         <ul class="nav navbar-nav navbar-right">
@@ -88,17 +90,19 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a href="views/login.php" class="navbar-brand">Ingresar</a>
-                    <a href="views/userRegister.php" class="navbar-brand">Registrarse</a>
+                    <a href="index.php" class="navbar-brand">Inicio</a>
+                    <a href="views/abbreviations.php" class="navbar-brand">Abreviaturas</a>
                 </div>
 
                 <div class="collapse navbar-collapse navbar-ex1-collapse">
                     <ul class="nav navbar-nav">
                         <!-- <li><a href="index.php">Inicio</a></li> -->
-                        <li><a href="views/abbreviations.php">Abreviaturas</a></li>
+                        <!-- <li><a href="views/abbreviations.php">Abreviaturas</a></li> -->
                     </ul>
 
                     <ul class="nav navbar-nav navbar-right">
+                        <li><a href="views/login.php">Ingresar</a></li>
+                        <li><a href="views/userRegister.php">Registrarse</a></li>
                         <li><a href="#">Acerca de</a></li>
                     </ul>
                 </div>
